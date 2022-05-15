@@ -1,0 +1,34 @@
+.image {
+  display: initial;
+}
+.image {
+  //   display: none;
+  width: 648px;
+  height: 509px;
+}
+.image-box {
+  margin: 178px 0px 0px 34px;
+}
+.form {
+  margin: 178px 0px 0px 0px;
+}
+.header-menu {
+  display: bloc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: $fontFamily;
+  flex-direction: column;
+  margin: 27px 42px 0px 0px;
+  @include e(job) {
+    display: flex;
+    border-radius: 100px;
+  }
+  @include e(can) {
+    display: flex;
+    margin-top: 10px;
+  }
+  @include e(ap) {
+    display: flex;
+    margin-top: 10px;
+  }
+}

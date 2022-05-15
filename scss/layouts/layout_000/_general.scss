@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: $fontFamily;
+}
+.header-menu {
+  @include display(flex);
+  //   @include flex(initial, 1, 0);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: $fontFamily;
+  flex-direction: column;
+  margin: 27px 42px 0px 0px;
+  @include e(job) {
+    display: flex;
+    border-radius: 100px;
+  }
+  @include e(can) {
+    display: flex;
+    margin-top: 10px;
+  }
+  @include e(ap) {
+    display: flex;
+    margin-top: 10px;
+  }
+}
+
+.header-logo {
+  display: flex;
+  margin: 22px 19px 22px 19px;
+}
+
+.logo {
+  width: 31px;
+  height: 31px;
+}
+.conteiner {
+  max-width: 720px;
+  width: 100%;
+  background-color: #fcfcfc;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 380px;
+  width: 100%;
+}
+.form-group__title {
+  font-size: 22px;
+}
+.form__btn-box {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 22px 42px 22px 42px;
+}
+.form-group {
+  @include display(flex);
+  justify-content: center;
+  flex-direction: column;
+  margin: 22px 42px 22px 42px;
+  border: 3px;
+  border-color: rgba(223, 226, 229, 1);
+}
+.form__btn {
+  width: 134px;
+}
+
+// .form__check-box {
+//   font-size: 14px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   margin: 22px 19px 22px 19px;
+// }
+.we {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 19px 25px 19px;
+  align-items: baseline;
+}
+.form__check-box_re {
+  margin-left: 35px;
+  color: rgba(107, 108, 111, 1);
+}
+.form__check-box_fo {
+  margin-right: 45px;
+  color: #dfe2e6;
+}
+.form__btn_r {
+  width: 134px;
+  color: red;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 26px;
+  border-radius: 100px;
+  border: 3px solid red;
+  /* Прозрачная граница, предназначенная для вывода варианта той же кнопки с обводкой */
+
+  text-decoration: none;
+}
+.form__btn_l {
+  width: 134px;
+  color: #fff;
+  background: red;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 26px;
+  border-color: red;
+  border-radius: 100px;
+  /* Прозрачная граница, предназначенная для вывода варианта той же кнопки с обводкой */
+  border: 3px solid transparent;
+  text-decoration: none;
+}
+.form__control {
+  border-radius: 100px;
+  padding: 9px 26px;
+  border-color: rgba(223, 226, 229, 1);
+}
+// .clearfix ::before {
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
+
+.form-group__title_pas {
+  color: rgba(107, 108, 111, 1);
+}
+.form-group__title_em {
+  color: rgba(107, 108, 111, 1);
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(223, 226, 229, 1);
+  opacity: 1; /* Firefox */
+}
+
+.conteiner-all {
+  max-width: 1440px;
+  height: 900px;
+}
+.conteiner-all {
+  display: flex;
+  justify-content: flex-start;
+}
+.image {
+  display: none;
+}
+.form {
+  max-width: 380px;
+  width: 100%;
+}
+.contener-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
